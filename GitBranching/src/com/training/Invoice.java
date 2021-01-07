@@ -4,6 +4,14 @@ public class Invoice {
 
 	private int id;
 	private String name;
+	private double amount;
+	
+	public double getAmount() {
+		return amount;
+	}
+	public void setAmount(double amount) {
+		this.amount = amount;
+	}
 	public Invoice() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -27,6 +35,12 @@ public class Invoice {
 	}
 	
 	
+	public Invoice(int id, String name, double amount) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.amount = amount;
+	}
 	@Override
 	public int hashCode() {
 		final int prime = 31;
