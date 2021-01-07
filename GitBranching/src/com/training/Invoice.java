@@ -58,5 +58,8 @@ public class Invoice {
 		return "Invoice [id=" + id + ", name=" + name + "]";
 	}
 	
-	
+	public String showInvoice() {
+		
+		return this.name;
+	}
 }
